@@ -1,0 +1,34 @@
+{
+  "name": "prpl-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npx now",
+    "dev": "ENV=dev nodemon --inspect dev.js"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "2.0.2",
+    "headless-devtools": "2.0.1",
+    "iltorb": "2.4.5",
+    "puppeteer-core": "2.0"
+  },
+  "devDependencies": {
+    "@s-ui/lint": "3",
+    "nodemon": "2.0.3",
+    "now": "18.0.0",
+    "puppeteer": "2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  },
+  "prettier": "./node_modules/@s-ui/lint/.prettierrc.js",
+  "stylelint": {
+    "extends": "./node_modules/@s-ui/lint/stylelint.config.js"
+  }
+}

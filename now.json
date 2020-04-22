@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "public": true,
+  "alias": "critical-prpl-service",
+  "functions": {
+    "api/index.js": {
+      "memory": 2048,
+      "maxDuration": 60
+    }
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/public/index.html"
+    },
+    {
+      "src": "/prpl",
+      "dest": "/api/index.js"
+    }
+  ]
+}
