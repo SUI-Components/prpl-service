@@ -47,7 +47,7 @@ async function prplFromURL({
     const browser = await puppeteer.launch({
       args: chrome.args,
       executablePath: await chrome.executablePath,
-      headless: false
+      headless: true
     })
 
     // Create a new page and navigate to it
